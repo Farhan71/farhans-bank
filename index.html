@@ -5,10 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Farhan's Bank</title>
 </head>
 <body>
+    <section id="login-area">
+    <h1 class="text-center">Welcome to Farhan's Bank</h1>
+    
+        <div class="box p-5 m-3">
+            <h1>Login</h1>
+            <div class="d-flex flex-column">
+                <input class="m-3 form-control input-field" type="text" placeholder="E-mail">
+                <input  class="m-3 form-control input-field" type="password" placeholder="Password">
+                <button id="login-button" class="m-3 enter-btn">Enter</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section  style="display: none;" id="transaction-area">
+        <h1 class="text-center">Transaction Area</h1> <br><br>
+        <div class="row">
+            <div class="col-md-4 "> 
+                <div class="deposit">
+                    <h1>Deposit</h1>
+                    <h3 >$ <span id="deposit-output">00</span> </h3>
+                </div>
+            </div>
+
+            <div class="col-md-4 "> 
+                <div class="withdraw">
+                    <h1>Withdraw</h1>
+                    <h3>$ <span id="withdraw-output" >00 </span> </h3>
+                </div>
+            </div>
+
+            <div class="col-md-4 "> 
+                <div class="balance">
+                    <h1>Balance</h1>
+                    <h3>$ <span id="balance" >00</span></h3>
+                </div>
+            </div>
+        </div> <br><br>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="deposit-input">
+                    <h2>Deposit</h2>
+                    <input id="deposit-input" class="form-control" type="text" placeholder="$ amount you want to deposit"> <br>
+                    <button id="deposit-button" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 ">
+                <div class="withdraw-input">
+                    <h2>Withdraw</h2>
+                    <input id="withdraw-input" class="form-control" type="text" placeholder="$ amount you want to withdraw"> <br>
+                    <button id="withdraw-button" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </section>
     
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html> 
